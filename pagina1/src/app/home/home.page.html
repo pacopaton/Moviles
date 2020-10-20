@@ -1,0 +1,45 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title>
+      Blank
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <ion-header collapse="condense">
+    <ion-toolbar>
+      <ion-title size="large">Blank</ion-title>
+    </ion-toolbar>
+  </ion-header>
+
+  <div id="container">
+    <strong>Ready to create an app?</strong>
+    <p>Start with Ionic <a target="_blank" rel="noopener noreferrer" href="https://ionicframework.com/docs/components">UI Components</a></p>
+
+    <table border = "2">
+      <tr>
+        <th>nombre</th>
+        <th>apellidos</th>
+        <th>dni</th>
+      </tr>
+    
+      <tr *ngFor="let persona of personas">
+        <td>{{persona.nombre}}</td>
+        <td>{{persona.apellido}}</td>
+        <td>{{persona.dni}}</td>
+      </tr>
+    
+      </table>
+      <ion-button (click)="abrirYoutube()">
+        Youtube
+        </ion-button >
+  
+        <ion-button (click)="toast()">
+          toast
+        </ion-button>
+     
+  </div>
+</ion-content>
+
+
